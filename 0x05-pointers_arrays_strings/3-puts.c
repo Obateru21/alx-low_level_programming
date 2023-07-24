@@ -1,15 +1,20 @@
 #include "main.h"
 
 /**
- * main - check the code for Holberton School students.
+ * _puts - Write a function that prints a string, followed by a new line, to
+ * stdout.
  *
- * Return: Always 0.
+ * @str: This is my input string
+ *
  */
-int main(void)
-{
-  char *str;
 
-  str = "I do not fear computers. I fear the lack of them - Isaac Asimov";
-  _puts(str);
-  return (0);
+void _puts(char *str)
+{
+	int index;
+
+	for (index = 0; str[index] != '\0'; index++)
+	{
+		_putchar(str[index]);
+	}
+	_putchar('\n');
 }
